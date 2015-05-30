@@ -1,0 +1,10 @@
+[Unit]
+Description="Disables digital audio LED on macbook."
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/hda-verb /dev/snd/hwC0D0 0x21 SET_PIN_WID 0x00
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

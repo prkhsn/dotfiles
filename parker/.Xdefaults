@@ -1,0 +1,5 @@
+xterm*background: #252525
+xterm*foreground: white
+xterm*renderFont: true
+xterm*faceName: UbuntuSans
+xterm*faceSize: 8
